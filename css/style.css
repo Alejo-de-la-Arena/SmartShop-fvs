@@ -1,0 +1,877 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Goldman', cursive;
+}
+
+body {
+    background-image: url("https://t4.ftcdn.net/jpg/03/03/81/43/240_F_303814328_Q35VPlZHjPuFvwvRsEnmrDiw0vjcy7pF.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    text-decoration: underline;
+    border: #111 0.5rem;
+}
+
+.barra-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-top: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.logo-smartshop{
+    display: flex;
+    width: 15rem;
+    height: 15rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 10rem;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: auto; 
+}
+
+
+
+.logo-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.barra-busqueda{
+    padding-top: 1rem;
+}
+
+.envios {
+    text-align: center;
+    gap: 3rem;
+}
+
+.izquierda {
+    display: flex;
+    align-items: left;
+}
+
+.boton-carrito {
+    background-color: white;
+}
+
+.icon-menu{
+    width: 2rem;
+    height: 2rem;
+}
+
+.menu{
+    list-style: none;
+}
+
+.inicio-sesion {
+    width: 100;
+    display: flex;
+    margin: 0 auto;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+
+.inicio-sesion input {
+    margin-left: 2rem;
+}
+
+.inicio-sesion-letra{
+    font-size: 1.3rem;
+}
+
+nav .menu{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+
+nav ul{
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+nav label{
+    display: inline-flex;
+    color: white;
+    cursor: pointer;
+}
+nav #toggle:checked ~ .menu{
+    height: 100%;
+}  
+
+.derecha {
+    display: flex;
+    align-items: center;
+    height: 0;
+}
+
+.carrito a {
+    display: flex;
+    align-items: right;
+    color: black;
+    text-decoration: none;
+
+}
+
+.centro {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.carrito-img {
+    height: 25px;
+    margin-right: 5px;
+}
+
+header {
+    top: 0;
+}
+
+.boton-inicio {
+    color: #333333;
+}
+
+.li-general {
+    display: inline;
+}
+
+.categorias {
+    text-align: left;
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+    position: relative;
+}
+
+nav li a {
+    display: block;
+    color: #1C1C1E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: white;
+}
+
+nav li form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li input[type="text"] {
+    padding: 6px;
+    margin: 0 6px;
+    border-radius: 4px;
+    border: none;
+    border: solid black 0.1rem;
+    text-align: center;
+
+}
+
+nav li button[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+    border: solid white 0.1rem;
+}
+
+nav li button[type="submit"]:hover {
+    background-color: black;
+    border: white 0.2rem;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+section li a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #333;
+    background-color: #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    border: solid black 0.1rem;
+}
+
+section li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contenedor2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.barra-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.div1 {
+    width: 100%;
+
+}
+
+
+
+
+.p-qns-somos {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+
+.secciones-imagenes {
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedor-img-txt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 30rem;
+    width: 100%;
+}
+
+.secciones-li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+.img-celular {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10rem;
+    border: double black 0.2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    filter: blur(0.1rem) contrast(1rem);
+}
+
+.img-reloj {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10rem;
+    border: double black 0.2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    filter: blur(0.1rem) contrast(1rem);
+}
+
+.img-auricular {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10rem;
+    border: double black 0.2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    filter: blur(0.1rem) contrast(1rem);
+}
+
+
+
+.li-nombres-txt {
+    text-decoration: underline;
+    color: #1C1C1E;
+}
+
+.li-nombres-txt r {
+    margin-left: 10rem;
+}
+
+.li-nombres-txt a {
+    margin-left: 4rem;
+}
+
+
+.anuncio {
+    width: 100%;
+    margin-left: 50rem;
+    margin-top: 5rem;
+
+
+}
+
+.img-celular-d {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    filter: blur(0.1rem) contrast(1rem) opacity(1rem);
+    flex-wrap: wrap;
+}
+
+.img-reloj-d {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    filter: blur(0.1rem) contrast(1rem) opacity(1rem);
+    flex-wrap: wrap;
+}
+
+.img-auricular-d {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    filter: blur(0.1rem) contrast(1rem) opacity(1rem);
+    flex-wrap: wrap;
+}
+
+.comprar-ahora {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+    border: solid white 0.1rem;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    text-decoration: underline red;
+    font-size: 3rem;
+}
+
+.productos-destacados {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 40rem;
+    border-radius: 2rem;
+    margin-bottom: 0.2rem;
+
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.1rem;
+}
+
+.informacion {
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.precio-oferta {
+    color: red;
+}
+
+.precio-original span {
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.grid-celulares-pag2 {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "header header header"
+        " main main main"
+        "footer footer footer "
+    ;
+
+}
+
+.grid-preguntas {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.2fr 0.10fr 0.05fr;
+    grid-gap: 1rem;
+    color: white;
+    grid-template-areas:
+    "titulo titulo titulo titulo"
+    "preguntas preguntas preguntas preguntas"
+    "respuestas respuestas respuestas respuestas"
+    ;
+}
+
+.titulo {
+    display: flex;
+    grid-area: titulo;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.preguntas {
+    display: flex;
+    color: white;
+    font-size: 2rem;
+    grid-area: preguntas;
+    text-align: center;
+    justify-content: center;
+    gap: 7rem;
+}
+
+.respuestas {
+    grid-area: respuestas;
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.celulares-inteligentes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 40rem;
+    border-radius: 2rem;
+}
+
+.celulares {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.1rem;
+}
+
+
+.img-celular1 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.img-celular2 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.img-celular3 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.img-celular4 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.img-celular5 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.s-image {
+    background-image: url("https://t3.ftcdn.net/jpg/02/01/34/82/240_F_201348239_AgvOJWSCKZAFjamDvnDYULR5bOAm6D56.jpg");
+}
+
+.img-celular6 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+
+.celulares-inteligentes2 {
+    display: flex;
+    flex-direction: row;
+    height: 40rem;
+    border-radius: 2rem;
+    margin-bottom: 0.2rem;
+    justify-content: center;
+}
+
+.relojes-inteligentes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 40rem;
+    border-radius: 2rem;
+}
+
+.relojes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.1rem;
+}
+
+.img-reloj1 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.img-reloj2 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.img-reloj3 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.img-reloj4 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.img-reloj5 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.img-reloj6 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.img-reloj7 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.img-reloj8 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.img-reloj9 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.auriculares-c {
+    display: flex;
+    flex-direction: row;
+    height: 40rem;
+    border-radius: 2rem;
+    margin-bottom: 0.2rem;
+    justify-content: center;
+}
+
+.auriculares {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.1rem;
+}
+
+.img-auricular1 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.img-auricular2 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.img-auricular3 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.img-auricular4 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.img-auricular5 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.img-auricular6 {
+    width: 20rem;
+    height: 20rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+
+footer {
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.whatsapp-logo {
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    border: white 0.2rem;
+}
+
+.instagram-logo {
+    position: fixed;
+    bottom: 1rem;
+    right: 6rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.gmail-logo {
+    position: fixed;
+    bottom: 1rem;
+    right: 10rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-info h4 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.footer-info p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.footer-credit {
+    text-align: right;
+    font-size: 1rem;
+}
+
+.video-smartshop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 4rem;
+}
+
+.reseñas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.reseña {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.reseña img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.reseña p {
+    font-size: 2rem;
+    font-style: italic;
+    margin: 0;
+    text-align: justify;
+    color: white;
+}
+
+@media (max-width:768px) {
+
+    .flex-img{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .img-celular{
+        width: 15rem;
+        height: 15rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+.img-reloj{
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-auricular{
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: row;
+}
+
+
+}
