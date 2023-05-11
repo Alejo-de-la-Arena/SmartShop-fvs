@@ -14,24 +14,33 @@
 
 <body>
     <header>
-                <nav>
-                    <div>
-                        <img class="logo-smartshop" src="./assets/img/Logo smartshop.png" alt="logo-ss">
-                    </div>
-                    <input type="checkbox" id="check">
-                    <label for="check" class="bar-btn"> 
-                        <i class="fa-solid fa-bars fa-2xs" style="color: #ffffff;"></i>
-                    </label>
-                    <ul class="menu">
-                        <li><a class="active" href="#">Inicio</a></li>
-                        <li><a href="#">Iniciar sesión</a></li>
-                        <li><a href="#">Ingresar contraseña</a></li>
+        <div class="barra-header">
+            <div class="izquierda">
+                <nav class="inicio-sesion">
+                    <label for="toggle"><a href="./assets/img/icons8-menú-26.png"></a>Iniciar Sesión</label>
+                    <input type="checkbox" id="toggle">
+                    <div class="menu">
+                        <ul> 
+                        <li><a href="">Iniciar sesión </a></li>
+                        <li><a href="">Ingresar contraseña</a></li>
                     </ul>
-                </nav>
+        </div>
+                    </nav>
+            </div>
+            <div class="centro">
+                <p class="envios">Envío gratis a todo el país</p>
+            </div>
+            <div class="derecha">
+                <p class="carrito"> <button class="boton-carrito"><a href="#"><img class="carrito-img"
+                                src="./assets/img/carrito-de-compras.png" alt="carrito-img">Carrito </a> </button> </p>
+                                <a class="logo-smartshop" href="./assets/img/Logo smartshop.png"></a>
+                            </div>
+        </div>
+        </div>
         <h1> SmartShop </h1>
         <nav class="barra-nav">
             <ul>
-                <li class="barra-busqueda"> 
+                <li class="barra-busqueda">
                     <form action="#" method="get">
                         <input type="text" name="busqueda" placeholder="¿Qué estás buscando...?">
                         <button class="boton-inicio" type="submit">Buscar</button>
