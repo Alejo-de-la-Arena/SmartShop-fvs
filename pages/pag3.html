@@ -8,56 +8,35 @@
     <title>SmartShop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <div class="barra-header">
-            <div class="izquierda">
-                <form class="inicio-sesion-form" action="">
-                    <input type="email" placeholder="Correo Electrónico">
-                    <input type="password" placeholder="Contraseña">
-                    <button type="submit">Iniciar Sesión</button>
-                </form>
+        <nav class="nav-header">
+            <div>
+                <img src="../assets/img/Logo smartshop v2.png" alt="logo" class="logo-smartshop">
             </div>
-            <div class="centro">
-                <p class="envios">Envío gratis a todo el país</p>
+            <div class="div-centro">
+                <h4> Envíos a todo el país</h4>
             </div>
-            <div class="derecha">
-                <p class="carrito"> <button class="boton-carrito"><a href="#"><img class="carrito-img"
-                                src="../assets/img/carrito-de-compras.png" alt="carrito-img">Carrito </a> </button> </p>
-            </div>
-        </div>
-        <h1> SmartShop </h1>
-        <nav class="barra-nav">
-            <ul>
-                <li>
-                    <form action="#" method="get">
-                        <input type="text" name="busqueda" placeholder="¿Qué estás buscando...?">
-                        <button class="boton-inicio" type="submit">Buscar</button>
-                    </form>
-                </li>
+            <label for="check" class="bar-btn">
+                <i class="fa-solid fa-bars" style="color: #38B6FF;"></i>
+            </label>
+            <input type="checkbox" id="check">
+            <ul class="nav-menu">
+                <li><a class="active" href="../index.html">Inicio</a></li>
+                <li><a href="../pages/pag3.html">Relojes Inteligentes</a></li>
+                <li><a href="../pages/pag4.html">Auriculares</a></li>
+                <li><a href="../pages/pag2.html">Celulares inteligentes</a></li>
+                <li><a href="../pages/pag5.html">Opiniones</a></li>
+                <li><a href="../pages/pag6.html">Preguntas Frecuentes</a></li>
             </ul>
         </nav>
-
-        <div>
-            <section class="s.image">
-                <ul class="contenedor">
-                    <li> <button> <a href="../pages/pag2.html">Celulares inteligentes</a></button></li>
-                    <li> <button> <a href="../pages/pag3.html">Relojes inteligentes</a></button></li>
-                    <li> <button> <a href="../pages/pag4.html">Auriculares</a></button></li>
-                    <li> <button> <a href="../pages/pag5.html">Reseñas</a></button></li>
-                </ul>
-                <ul class="contenedor2">
-                    <li> <button> <a href="../index.html">Inicio</a></button> </li>
-                    <li> <button> <a href="../pages/pag6.html">Preguntas Frecuentes</a> </button> </li>
-                </ul>
-            </section>
-        </div>
+    </header>
         <main>
-
             <h2>Relojes inteligentes</h2>
             <div class="relojes-inteligentes">
                 <div class="relojes">

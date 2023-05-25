@@ -8,62 +8,48 @@
     <title>SmartShop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
-        <div class="barra-header">
-            <div class="izquierda">
-                <nav class="inicio-sesion">
-                    <label for="toggle"><a href="./assets/img/icons8-menú-26.png"></a>Iniciar Sesión</label>
-                    <input type="checkbox" id="toggle">
-                    <div class="menu">
-                        <ul> 
-                        <li><a href="">Iniciar sesión </a></li>
-                        <li><a href="">Ingresar contraseña</a></li>
-                    </ul>
-        </div>
-                    </nav>
+        <nav class="nav-header">
+            <div>
+                <img src="./assets/img/Logo smartshop v2.png" alt="logo" class="logo-smartshop">
             </div>
-            <div class="centro">
-                <p class="envios">Envío gratis a todo el país</p>
+            <div class="div-centro">
+                <h4> Envíos a todo el país</h4>
             </div>
-            <div class="derecha">
-                <p class="carrito"> <button class="boton-carrito"><a href="#"><img class="carrito-img"
-                                src="./assets/img/carrito-de-compras.png" alt="carrito-img">Carrito </a> </button> </p>
-                                <a class="logo-smartshop" href="./assets/img/Logo smartshop.png"></a>
-                            </div>
-        </div>
-        </div>
-        <h1> SmartShop </h1>
-        <nav class="barra-nav">
-            <ul>
-                <li class="barra-busqueda">
-                    <form action="#" method="get">
-                        <input type="text" name="busqueda" placeholder="¿Qué estás buscando...?">
-                        <button class="boton-inicio" type="submit">Buscar</button>
-                    </form>
-                </li>
+            <label for="check" class="bar-btn">
+                <i class="fa-solid fa-bars" style="color: #38B6FF;"></i>
+            </label>
+            <input type="checkbox" id="check">
+            <ul class="nav-menu">
+                <li><a class="active" href="./index.html">Inicio</a></li>
+                <li><a href="./pages/pag3.html">Relojes Inteligentes</a></li>
+                <li><a href="./pages/pag4.html">Auriculares</a></li>
+                <li><a href="./pages/pag2.html">Celulares inteligentes</a></li>
+                <li><a href="./pages/pag5.html">Opiniones</a></li>
+                <li><a href="./pages/pag6.html">Preguntas Frecuentes</a></li>
             </ul>
         </nav>
-        <div>
-            <section class="s.image">
-                <ul class="contenedor">
-                    <li> <button> <a href="./pages/pag2.html">Celulares inteligentes</a></button></li>
-                    <li> <button> <a href="./pages/pag3.html">Relojes inteligentes</a></button></li>
-                    <li> <button> <a href="./pages/pag4.html">Auriculares</a></button></li>
-                    <li> <button> <a href="./pages/pag5.html">Reseñas</a></button></li>
-                </ul>
-                <ul class="contenedor2">
-                    <li> <button> <a href="./index.html">Inicio</a></button> </li>
-                    <li> <button> <a href="./pages/pag6.html">Preguntas Frecuentes</a> </button> </li>
-                </ul>
-            </section>
-        </div>
     </header>
     <main>
+        <div>
+            <h1> SmartShop </h1>
+            <nav class="barra-nav">
+                <ul>
+                    <li class="barra-busqueda">
+                        <form action="#" method="get">
+                            <input type="text" name="busqueda" placeholder="¿Qué estás buscando...?">
+                            <button class="boton-inicio" type="submit">Buscar</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <div class="div1">
             <h2> ¿Quiénes somos? </h2>
             <p class="p-qns-somos"> Bienvenido a SmartShop, el lugar perfecto para encontrar los dispositivos
@@ -71,10 +57,8 @@
                 sofisticados. Somos una tienda en línea dedicada a ofrecer una amplia variedad de productos de alta
                 calidad
                 y al mejor precio.
-
                 En SmartShop, creemos en la tecnología que nos hace la vida más fácil y cómoda. Por eso, ofrecemos una
                 amplia gama de productos de última generación.
-
                 Nos enorgullece ofrecer un servicio al cliente excepcional, con expertos en tecnología siempre
                 dispuestos a
                 ayudarte a encontrar el producto perfecto para ti. Además, nuestra plataforma de compras en línea es
@@ -82,10 +66,10 @@
                 de usar y segura, lo que te permitirá comprar con total confianza.
             </p>
         </div>
-        <section class="contenedor-img-txt">
-            <article class="secciones-imagenes">
-                <div>
-                    <ul class="flex-img">
+        <section class="seccion-img-li">
+            <article>
+                <div class="grid-img-li">
+                    <ul class="seccion-imagenes">
                         <li class="li-seccion-img"> <img class="img-celular"
                                 src="https://image.lexica.art/full_jpg/2f18fe45-ffe9-491b-a7a6-891d4000d735"
                                 alt="CelularImg"> </li>
@@ -97,9 +81,9 @@
                                 alt="auricularesImg"> </li>
                     </ul>
                     <ul class="secciones-li">
-                        <li class="li-nombres-txt c"> <a href="./pages/pag2.html"> Celulares </a> </li>
-                        <li class="li-nombres-txt r"> <a href="./pages/pag3.html"> Relojes </a> </li>
-                        <li class="li-nombres-txt a"> <a href="./pages/pag4.html"> Auriculares </a> </li>
+                        <li class="boton-celulares"> <a href="./pages/pag2.html"> Celulares </a> </li>
+                        <li class="boton-relojes"> <a href="./pages/pag3.html"> Relojes </a> </li>
+                        <li class="boton-auriculares"> <a href="./pages/pag4.html"> Auriculares </a> </li>
                     </ul>
                 </div>
             </article>
@@ -137,19 +121,41 @@
         </div>
     </main>
     <footer>
+        <div>
         <img class="whatsapp-logo" src="./assets/img/whatsapp (1).png" alt="logo whatsapp">
         <img class="instagram-logo" src="./assets/img/instagram (1).png" alt="logo instagram">
         <img class="gmail-logo" src="./assets/img/gmail.png" alt="gmail logo">
         <div class="footer-container">
             <div class="footer-info">
                 <h4>SmartShop</h4>
-                <p>Tu sitio web favorito para comprar celulares, relojes y auriculares al mejor precio</p>
+                <p>Tu sitio web favorito para comprar celulares, relojes y auriculares al mejor precio!</p>
+            </div>
+            <div class="footer-subscripcion">
+                <h4>Suscríbete a ser un miembo de SmartShop y obten beneficios increibles!</h4>
+                <form>
+                    <input type="email" placeholder="Ingresa tu correo electrónico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <div class="footer-politicas">
+                <h4>Políticas</h4>
+                <ul>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de devoluciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-certificacion">
+                <h4>Certificaciones</h4>
+                <ul>
+                    <li><a href="#"><img src="./assets/img/coderhouse-logo.png" alt="Certificación-coder"></a></li>
+                </ul>
             </div>
             <div class="footer-credit">
                 <p>Proyecto elaborado por Alejo de la Arena</p>
             </div>
         </div>
+        </div>
     </footer>
 </body>
-
 </html>

@@ -6,58 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>SmartShop</title>
+    <script src="https://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
     <header>
-        <div class="barra-header">
-            <div class="izquierda">
-                <form class="inicio-sesion-form" action="">
-                    <input type="email" placeholder="Correo Electrónico">
-                    <input type="password" placeholder="Contraseña">
-                    <button type="submit">Iniciar Sesión</button>
-                </form>
+        <nav class="nav-header">
+            <div>
+                <img src="../assets/img/Logo smartshop v2.png" alt="logo" class="logo-smartshop">
             </div>
-            <div class="centro">
-                <p class="envios">Envío gratis a todo el país</p>
+            <div class="div-centro">
+                <h4> Envíos a todo el país</h4>
             </div>
-            <div class="derecha">
-                <p class="carrito"> <button class="boton-carrito"><a href="#"><img class="carrito-img"
-                                src="../assets/img/carrito-de-compras.png" alt="carrito-img">Carrito </a> </button> </p>
-            </div>
-        </div>
-        <h1> SmartShop </h1>
-        <nav class="barra-nav">
-            <ul>
-                <li>
-                    <form action="#" method="get">
-                        <input type="text" name="busqueda" placeholder="¿Qué estás buscando...?">
-                        <button class="boton-inicio" type="submit">Buscar</button>
-                    </form>
-                </li>
+            <label for="check" class="bar-btn">
+                <i class="fa-solid fa-bars" style="color: #38B6FF;"></i>
+            </label>
+            <input type="checkbox" id="check">
+            <ul class="nav-menu">
+                <li><a class="active" href="../index.html">Inicio</a></li>
+                <li><a href="../pages/pag3.html">Relojes Inteligentes</a></li>
+                <li><a href="../pages/pag4.html">Auriculares</a></li>
+                <li><a href="../pages/pag2.html">Celulares inteligentes</a></li>
+                <li><a href="../pages/pag5.html">Opiniones</a></li>
+                <li><a href="../pages/pag6.html">Preguntas Frecuentes</a></li>
             </ul>
         </nav>
-
-        <div>
-            <section class="s.image">
-                <ul class="contenedor">
-                    <li> <button> <a href="../pages/pag2.html">Celulares inteligentes</a></button></li>
-                    <li> <button> <a href="../pages/pag3.html">Relojes inteligentes</a></button></li>
-                    <li> <button> <a href="../pages/pag4.html">Auriculares</a></button></li>
-                    <li> <button> <a href="../pages/pag5.html">Reseñas</a></button></li>
-                </ul>
-                <ul class="contenedor2">
-                    <li> <button> <a href="../index.html">Inicio</a></button> </li>
-                    <li> <button> <a href="../pages/pag6.html">Preguntas Frecuentes</a> </button> </li>
-                </ul>
-            </section>
-        </div>
+    </header>.
         <main>
-            <h2>Reseñas</h2>
+            <h2>Opiniones</h2>
             <div class="reseña">
                 <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv0ysGgqITPqHaMq0GypAssnoeUFtzwy8WQw&usqp=CAU">
@@ -67,30 +47,45 @@
                     cualquier persona que quiera adquirir productos de calidad a buenos precios. ¡Gracias SmartShop por
                     hacer mi vida más fácil y elegante!" - Marta Giménez</p>
             </div>
-
-
-
-            <div class="video-smartshop">
-                <video class="video" width="640" height="360" controls>
-                    <source src="../assets/video/Sin título ‑ Made with FlexClip.mp4" type="video/mp4">
+            <div id="carouselExampleIndicators" class="carousel slide container-carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/img/auriculares-carousel.jpg" class="img-carousel d-block w-100" alt="auriculares-carousel">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/img/celular-inteligente-carousel.jpg" class="img-carousel d-block w-100" alt="celular-carousel">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/img/reloj-inteligente-carousel.jpg" class="img-carousel d-block w-100" alt="reloj-carousel">
+                    </div> 
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-
+            
             <div class="reseñas">
                 <form action="#" method="get">
                     <input type="text" name="busqueda" placeholder="Dejanos tu opinion">
                     <button onclick="enviar()">Enviar</button>
                 </form>
             </div>
-
-
-
         </main>
-
         <footer>
             <img class="whatsapp-logo" src="../assets/img/whatsapp (1).png" alt="logo whatsapp">
             <img class="instagram-logo" src="../assets/img/instagram (1).png" alt="logo instagram">
             <img class="gmail-logo" src="../assets/img/gmail.png" alt="gmail logo">
-
             <div class="footer-container">
                 <div class="footer-info">
                     <h4>SmartShop</h4>
@@ -101,9 +96,6 @@
                 </div>
         </footer>
 
-
-
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
-
 </html>
